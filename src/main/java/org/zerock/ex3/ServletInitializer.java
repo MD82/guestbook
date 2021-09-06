@@ -1,4 +1,4 @@
-package org.zerock.ex1;
+package org.zerock.ex3;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
@@ -7,7 +7,7 @@ public class ServletInitializer extends SpringBootServletInitializer {
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(Ex1Application.class);
+        return application.sources(Ex3Application.class);
     }
 
 }
