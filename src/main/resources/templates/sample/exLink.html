@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+&nbsp;&nbsp;&nbsp;&nbsp;ㅇ /sample/exView(sno=dto.sno)
+    <li th:each="dto1 : ${list}">
+        <a th:href="@{/sample/exView(sno=${dto1.sno})}">[[${dto1}]]</a>
+    </li>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ㅇ /sample/exView/{sno}(sno=dto.sno)
+    <li th:each="dto2 : ${list}">
+        <a th:href="@{/sample/exView/{sno}(sno=${dto2.sno})}">[[${dto2}]]</a>
+    </li>
+</body>
+</html>
